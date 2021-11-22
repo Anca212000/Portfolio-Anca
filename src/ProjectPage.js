@@ -138,8 +138,6 @@ export default function PrrojectPage() {
 
     clearCacheData();
 
-    const namePortfolio = process.env.PUBLIC_URL + 'assets/nameNormalGlitch.gif';
-
     const [checked, setChecked] = useState(false);
     useEffect(() => {
         setChecked(true);

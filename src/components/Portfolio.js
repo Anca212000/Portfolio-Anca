@@ -29,8 +29,6 @@ export default function Portfolio() {
     const classes = useStyles();
     const checked = useWindowPosition('header');
 
-    const imgCircuits = process.env.PUBLIC_URL + 'assets/circuits.png';
-
     return (
     <div className={classes.root} id="portfolio-info">
         <>
