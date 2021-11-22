@@ -1,0 +1,227 @@
+#portfolioHover {
+    transition: ease-in-out 0.2s;
+}
+
+#portfolioHover:hover {
+    background: -webkit-linear-gradient(45deg,#ffbb01,rgb(201, 0, 90));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor:pointer;
+    text-shadow: 5px 4px 1px aqua, 5px 4px 10px seashell, -1px -2px 1px rgb(201, 0, 90, 0.5), 0 0 1px #ffbb01;
+}
+
+#menuIconHover {
+    border-radius: 10px;
+    transition:ease-in-out .3s;
+}
+
+#menuIconHover:hover {
+    color:aqua; 
+    box-shadow: 5px 4px 1px aqua, 5px 4px 10px seashell, -1px -2px 1px rgb(201, 0, 90, 0.5), 0 0 1px #ffbb01;
+    cursor:pointer;
+}
+
+#buttonSeePortf::before {
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:#aa77f1;
+    background-image: linear-gradient(147deg, #c800e8 0%, #c90059 74%);
+    z-index:-1;
+    clip-path:circle(0% at 50% 100%);
+    transition:all .8s;
+}
+
+#buttonSeePortf:hover::before {
+    clip-path: circle(100% at 50% 100%);
+    border-radius: 100vh 100vh 0 0;
+}
+
+#arrowsDown span {
+    display:block;
+    width:2vh;
+    height:2vh;
+    border-bottom: 1px solid #4cfce1;
+    border-right: 1px solid #4cfce1;
+    transform:rotate(45deg);
+    animation:animate 2s infinite;
+    margin: -10px;
+}
+
+#arrowDown span:nth-child(2) {
+    animation-delay: -0.2s;
+}
+
+#arrowDown span:nth-child(3) {
+    animation-delay: -0.4s;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0.0;
+        transform:rotate(45deg) translate(-1.5vh, -1.5vh);
+    }
+    50% {
+        opacity: 1.0;
+    }
+    100% {
+        opacity: 0.0;
+        transform:rotate(45deg) translate(1.5vh, 1.5vh);
+    }
+}
+
+#menuItems li {
+    padding: 14px 0 0 0;
+    transition: linear .3s;
+}
+
+#menuItems div {
+    margin-top:-4px;
+    width:22vh;
+    border-bottom: 1px solid rgba(23, 0, 61, 0.473);
+    box-shadow: 1px 1px 15px rgba(23, 0, 61, 1);
+    transition: linear .5s;
+}
+
+#menuItems li:hover {
+    color:#e6fb0000;
+    text-shadow: 5px 2px 1px aqua, 5px 2px 10px seashell, -2px -2px 1px rgba(23, 0, 61, 0.7), 0 0 10px #ffbb01;
+    cursor: pointer;
+    transform: translate(2vh);
+
+}
+
+#menuItems li:hover + div {
+    border-bottom:1px solid rgba(217, 246, 255, 0.2);
+    box-shadow: 1px 1px 5px rgba(217, 246, 255, 0.7);
+}
+
+#Proj3dCards {
+    perspective: 100vh;
+    transform-style: preserve-3d;
+    transition-property: perspective;
+    transition-duration:1s;
+}
+
+#Proj3dCards:hover #projectCardTransform {
+    transform: rotate(0deg);
+}
+
+#projectCardTransform {
+    transform:rotateY(30deg);
+    transition-property: transform;
+    transition-duration:0.5s;
+}
+
+#infoCard {
+    transform: translate(80px) rotateY(30deg);
+    transition-property: transform, box-shadow, margin;
+    transition-duration: 0.5s;
+}
+
+#Proj3dCards:hover #infoCard {
+    transform:rotateY(0deg);
+    box-shadow: 0 0 30px rgb(18, 12, 23);
+}
+
+#buttonProjShow {
+    width:20vh;
+    height:6vh;
+    padding:1vh 2vh;
+    margin:0 auto;
+    border-radius:30px;
+    border:2px solid #c90059;
+    text-align: center;
+    transition: .2s;
+    text-decoration: none;
+    background: linear-gradient(35deg,  #f3ed78, #ffebf4);
+}
+
+@keyframes neon-button {
+    0% 
+    {
+        left: 1px;
+        background-color:#0900220c;
+        box-shadow: 0 0 5px 2.5px #c9005a42;
+    }
+    25%
+    {
+        left: 10px;
+        background-color:#0900224b;
+        box-shadow: 0 0 10px 5px #c9005a54;
+    }
+    50%
+    {
+        left: 20px;
+        background-color:#09002281;
+        box-shadow: 0 0 15px 7.5px #c9005a85;
+    }
+    75%
+    {
+        left: 30px;
+        background-color:#090022b0;
+        box-shadow: 0 0 20px 10px #c9005ac5;
+    }
+    100%
+    {
+        left: 4px;
+        background-color:#090022;
+        box-shadow: 0 0 25px 12.5px #c90059;
+    }
+}
+
+#buttonProjShow:hover {
+    background:linear-gradient(45deg,#090022, #1a022e);
+    box-shadow: 0 0 30px 15px #c90059;
+    border: 2px solid transparent;
+    animation-name: neon-button;
+    animation-duration: .2s;
+    animation-timing-function: ease;
+}
+  
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: transparent;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    box-shadow:5px 5px 20px -8px darkgrey;
+    border-radius:10px;
+}
+  
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+  
+.swiper {
+    width: 100%;
+    height: 50vh;
+    margin: 20px auto;
+    border-radius: 30vh;
+    -webkit-box-reflect: below -80px linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.082));
+}
+
+#buttPlayApp:hover {
+    background-image: linear-gradient(45deg,#c900e8 0%, #c90059 20%, #ff4096 40%, #ff8e25 60%, rgb(160, 35, 35) 80%, #922e00 100%) ;
+    background-size: 200px;
+    background-position: center;
+    border: 2px solid #922e00d2;
+    color:#17003d;
+    box-shadow: 0 0 25px -2px #c9005a;
+}

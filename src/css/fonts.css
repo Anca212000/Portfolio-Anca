@@ -1,0 +1,12 @@
+@font-face {
+    font-family: "RighteousRegular";
+    src: local("RighteousRegular"),
+     url("../fonts/Righteous-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Jura";
+    src: local("Jura"),
+     url("../fonts/Jura.ttf") format("truetype");
+}
+    
