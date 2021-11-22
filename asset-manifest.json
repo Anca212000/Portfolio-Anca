@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/Portfolio-Anca/static/css/main.029b5661.chunk.css",
+    "main.js": "/Portfolio-Anca/static/js/main.b9f7c0b1.chunk.js",
+    "main.js.map": "/Portfolio-Anca/static/js/main.b9f7c0b1.chunk.js.map",
+    "runtime-main.js": "/Portfolio-Anca/static/js/runtime-main.effef6be.js",
+    "runtime-main.js.map": "/Portfolio-Anca/static/js/runtime-main.effef6be.js.map",
+    "static/css/2.8b0ee923.chunk.css": "/Portfolio-Anca/static/css/2.8b0ee923.chunk.css",
+    "static/js/2.c9fad29d.chunk.js": "/Portfolio-Anca/static/js/2.c9fad29d.chunk.js",
+    "static/js/2.c9fad29d.chunk.js.map": "/Portfolio-Anca/static/js/2.c9fad29d.chunk.js.map",
+    "index.html": "/Portfolio-Anca/index.html",
+    "static/css/2.8b0ee923.chunk.css.map": "/Portfolio-Anca/static/css/2.8b0ee923.chunk.css.map",
+    "static/css/main.029b5661.chunk.css.map": "/Portfolio-Anca/static/css/main.029b5661.chunk.css.map",
+    "static/js/2.c9fad29d.chunk.js.LICENSE.txt": "/Portfolio-Anca/static/js/2.c9fad29d.chunk.js.LICENSE.txt",
+    "static/media/fonts.css": "/Portfolio-Anca/static/media/Righteous-Regular.fd011047.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.effef6be.js",
+    "static/css/2.8b0ee923.chunk.css",
+    "static/js/2.c9fad29d.chunk.js",
+    "static/css/main.029b5661.chunk.css",
+    "static/js/main.b9f7c0b1.chunk.js"
+  ]
+}
