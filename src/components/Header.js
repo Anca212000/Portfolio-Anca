@@ -96,7 +96,7 @@ export default function Header() {
     const classes = useStyles();
     const [opens, setOpens] = useState(false);
 
-    const namePortfolio = backgroundSizeprocess.env.PUBLIC_URL + '/assets/nameNormalGlitch.gif';//"/Portfolio-Anca/assets/nameNormalGlitch.gif";
+    const namePortfolio = process.env.PUBLIC_URL + '/assets/nameNormalGlitch.gif';//"/Portfolio-Anca/assets/nameNormalGlitch.gif";
     const pictureIntro = process.env.PUBLIC_URL + '/assets/introWebpage.png';//"/Portfolio-Anca/public/assets/introWebpage.png";
     const bubbles = process.env.PUBLIC_URL + '/assets/bubbles-crop.png';//"/Portfolio-Anca/public/assets/bubbles-crop.png";
 
