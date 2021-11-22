@@ -96,12 +96,9 @@ export default function Header() {
     const classes = useStyles();
     const [opens, setOpens] = useState(false);
 
-    const namePortfolio = "https://anca212000.github.io/Portfolio-Anca/public/assets/nameNormalGlitch.gif";
-    // backgroundSizeprocess.env.PUBLIC_URL + 'assets/nameNormalGlitch.gif';
-    const pictureIntro = "https://anca212000.github.io/Portfolio-Anca/public/assets/introWebpage.png";
-    //process.env.PUBLIC_URL + 'assets/introWebpage.png';
-    const bubbles = "https://anca212000.github.io/Portfolio-Anca/public/assets/bubbles-crop.png";
-    //process.env.PUBLIC_URL + 'assets/bubbles-crop.png';
+    const namePortfolio = backgroundSizeprocess.env.PUBLIC_URL + '/assets/nameNormalGlitch.gif';//"/Portfolio-Anca/assets/nameNormalGlitch.gif";
+    const pictureIntro = process.env.PUBLIC_URL + '/assets/introWebpage.png';//"/Portfolio-Anca/public/assets/introWebpage.png";
+    const bubbles = process.env.PUBLIC_URL + '/assets/bubbles-crop.png';//"/Portfolio-Anca/public/assets/bubbles-crop.png";
 
     const [checked, setChecked] = useState(false);
     useEffect(() => {

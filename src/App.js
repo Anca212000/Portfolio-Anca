@@ -9,7 +9,7 @@ import clearCacheData from './emptyCache';
 
 const useStyles = makeStyles({
   root: {
-    backgroundImage: `url(${process.env.PUBLIC_URL + 'assets/bckPortfolioEnlarge.png'})`,
+    backgroundImage: `url(${process.env.PUBLIC_URL + '/assets/bckPortfolioEnlarge.png'})`,
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover',
     minHeight: '100vh',
@@ -28,7 +28,7 @@ const videoStyle = {
 
 export default function App() {
   const background = useStyles();
-  const animatedWall = process.env.PUBLIC_URL + 'assets/video/trim_video.mp4';
+  const animatedWall = process.env.PUBLIC_URL + '/assets/video/trim_video.mp4';
   clearCacheData();
 
   return (

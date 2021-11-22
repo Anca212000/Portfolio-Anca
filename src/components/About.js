@@ -24,7 +24,7 @@ const styleProfilePicture = {
 }
 
 export default function About({checked}) {
-    const imgProfile = process.env.PUBLIC_URL + 'assets/profile.jpg';
+    const imgProfile = process.env.PUBLIC_URL + '/assets/profile.jpg';
 
     return (
         <Fade in={checked} {...(checked ? {timeout:1500} : {})}>
