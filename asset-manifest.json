@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Portfolio-Anca/static/css/main.029b5661.chunk.css",
-    "main.js": "/Portfolio-Anca/static/js/main.cfb5739b.chunk.js",
-    "main.js.map": "/Portfolio-Anca/static/js/main.cfb5739b.chunk.js.map",
+    "main.js": "/Portfolio-Anca/static/js/main.f6874948.chunk.js",
+    "main.js.map": "/Portfolio-Anca/static/js/main.f6874948.chunk.js.map",
     "runtime-main.js": "/Portfolio-Anca/static/js/runtime-main.effef6be.js",
     "runtime-main.js.map": "/Portfolio-Anca/static/js/runtime-main.effef6be.js.map",
     "static/css/2.8b0ee923.chunk.css": "/Portfolio-Anca/static/css/2.8b0ee923.chunk.css",
@@ -19,6 +19,6 @@
     "static/css/2.8b0ee923.chunk.css",
     "static/js/2.c9fad29d.chunk.js",
     "static/css/main.029b5661.chunk.css",
-    "static/js/main.cfb5739b.chunk.js"
+    "static/js/main.f6874948.chunk.js"
   ]
 }
