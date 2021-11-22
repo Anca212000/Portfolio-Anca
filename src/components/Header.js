@@ -96,9 +96,9 @@ export default function Header() {
     const classes = useStyles();
     const [opens, setOpens] = useState(false);
 
-    const namePortfolio = process.env.PUBLIC_URL + '/assets/nameNormalGlitch.gif';//"/Portfolio-Anca/assets/nameNormalGlitch.gif";
-    const pictureIntro = process.env.PUBLIC_URL + '/assets/introWebpage.png';//"/Portfolio-Anca/public/assets/introWebpage.png";
-    const bubbles = process.env.PUBLIC_URL + '/assets/bubbles-crop.png';//"/Portfolio-Anca/public/assets/bubbles-crop.png";
+    const namePortfolio = /*process.env.PUBLIC_URL +*/ '/Portfolio-Anca/assets/nameNormalGlitch.gif';//"/Portfolio-Anca/assets/nameNormalGlitch.gif";
+    const pictureIntro = '/Portfolio-Anca/assets/introWebpage.png';//"/Portfolio-Anca/public/assets/introWebpage.png";
+    const bubbles = '/Portfolio-Anca/assets/bubbles-crop.png';//"/Portfolio-Anca/public/assets/bubbles-crop.png";
 
     const [checked, setChecked] = useState(false);
     useEffect(() => {
