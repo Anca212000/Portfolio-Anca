@@ -35,8 +35,8 @@ export default function About({checked}) {
                     <span style={styleProfilePicture}>
                         <img src={imgProfile} style={{objectFit:'cover',width:'100%',height:'100%',borderRadius:'50%',zIndex:'2'}}/>
                     </span>
-                    I am student at Computer Science right now in my fourth year and I like creating stuffs that involves web development. I am learning fast new technologies related to this field and I wish having a cariere depending about this domain, using my knowledgies. I have a passion to be up to date with latest releases about web technologies and learning new informations. 
-                    <br/><br/>I like studying Backend and Frontend web development in my spare time, out of school (I am self-learning person, I like independent working). I have talent at drawing and I can make a impressive design using my sketches along with specialized programs. I would like to share my ideas, creativity and originality in creating web/mobile apps. I am studying for a Computer Science Degree.
+                    I have a Computer Science degree right now and I like creating stuffs that involves web development. I am learning fast (Also, I am self-learning person, I like independent working) new technologies related to this field and I wish having a cariere depending about this domain, using my knowledgies. I have a passion to be up to date with latest releases about web technologies and learning new informations. 
+                    <br/><br/>I have worked as a fullstack web developer for 8 months. I like working with backend and frontend technologies, especially the frontend ones (I like also, web design and UI/UX - here I can share my creativity). I have talent at drawing and I can make a impressive design using my sketches along with specialized programs. I would like to share my ideas, creativity and originality in creating web/mobile apps.
                     <br/><br/>I am a hardworking, punctual person, seriously and very fair person. I don't like copy things, I like to learn, making them on my own.
                     <br/><br/>
                     Language skills:<br/>
