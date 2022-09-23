@@ -34,6 +34,7 @@ export default function Portfolio() {
         <>
         <div className={classes.listedProjects} id="list-of-projects">
             <h1 className={classes.titleMenu} id="onlyProjects">Projects</h1>
+                <ProjectCard checked={checked} infoProject={info[8]}/>
                 <ProjectCard checked={checked} infoProject={info[7]}/>
                 <ProjectCard checked={checked} infoProject={info[6]}/>
                 <ProjectCard checked={checked} infoProject={info[5]}/>
