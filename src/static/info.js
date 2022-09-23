@@ -188,6 +188,43 @@ const info = [
         video: process.env.PUBLIC_URL + '/assets/video/ChatAppReactjsSpeed.mp4',
         linkHosted: "https://613735c45228717701eae08d--flamboyant-leakey-27ed99.netlify.app/"
     },
+    {
+        id: 8,
+        title:"Receive Your Realtime Feedback",
+        shortDescription:"ReactJS, Node.js, MongoDB, SCSS App. A web app that can be useful in the school field for improving the student's knowledge in solving a quiz during the teaching hours...",
+        longDescription:"This app was fully created in ReactJS (also using Speech Recognition library) and Node.js (for setting the routes and inserting the answers and scores in database). The design was coded in SCSS and some elements were added by Material UI (a ReactJS library with components for design). \
+        The app can be used both the teacher and students during some faculty's courses or labs (or during some class hours in a college, high school program), firstly creating an account (with their email addresses provided by school) and then access the web platform. \
+        In the dashboard (where only the teacher has access) can be uploaded questions with answers for the courses (via an excel file with different questions and correct answers structured on chapters) and at the same time, can be generated an alphanumeric key (that expires in 1 hour) for accessing the quiz for that course by the present students. \
+        After the questions had been uploaded by teacher, he/she can select which questions from that course (that takes place in that moment) can take part to the student's quiz ( 1 or more questions with 4 random answers - correct or false). \
+        Students (after they had been inserted the key given by their teacher) should solve the quiz - that questions selected by teacher - and finally, they can view the obtained score. \
+        Overmore, in dashboard the teacher can view the presence of every student for each course, some extra informations about the courses he/she is teaching (the time when the courses take place, their location) and a report that contains a total score for each selected question gained by the all students. \
+        This app has implemented the Speech Recognition option that allows students with disabilities or childs to solve the quizes in vocal mode - they can hear the question with answers and then can say out load the correct answer (or answers, if there are more). This option can be used by that special student (a blind one or a paralyzed one), only if had been activated by his/her teacher.",
+        imageUrl: process.env.PUBLIC_URL + '/assets/school-feedback/fig31.png',
+        images: [
+            "school-feedback/Fig1.png",
+            "school-feedback/fig7.png",
+            "school-feedback/fig8.png",
+            "school-feedback/fig11.png",
+            "school-feedback/fig12.png",
+            "school-feedback/fig17.png",
+            "school-feedback/fig19.png",
+            "school-feedback/fig20.png",
+            "school-feedback/fig21.png",
+            "school-feedback/fig22.png",
+            "school-feedback/fig23.png",
+            "school-feedback/fig25.png",
+            "school-feedback/fig26.png",
+            "school-feedback/fig27.png",
+            "school-feedback/fig29.png",
+            "school-feedback/fig30.png",
+            "school-feedback/fig31.png",
+            "school-feedback/fig32.png",
+            "school-feedback/fig33.png",
+            "school-feedback/fig34.png",
+            "school-feedback/fig35.png",
+        ],
+        video: process.env.PUBLIC_URL + '/assets/video/ReceiveFeedbackSchool.mp4',
+    },
 ];
 
 export default info;
