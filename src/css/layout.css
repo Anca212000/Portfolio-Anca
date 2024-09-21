@@ -1,375 +1,101 @@
 ::-webkit-scrollbar {
     width: 8px;
 }
-  
+
 ::-webkit-scrollbar-track {
     background: rgb(71, 61, 139);
 }
-  
+
 ::-webkit-scrollbar-thumb {
-    background: #c9005ab4;/*rgba(0, 0, 139, 0.233);*/
+    background: #c9005ab4;
+    /*rgba(0, 0, 139, 0.233);*/
     background-image: linear-gradient(45deg, #c9005ab4, #ffb994);
     border-radius: 10px;
 }
-  
+
 ::-webkit-scrollbar-thumb:hover {
     background-image: linear-gradient(45deg, #c9005a, #e26d00e5);
 }
 
+#root {
+    overflow-x: hidden;
+}
+
+.myBubbleUI {
+    width: 100%;
+    height: 90vh;
+}
+
+.child {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.childComponent {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    user-select: none;
+    align-items: center;
+    justify-content: center;
+    background-color: #4b218f;
+}
+
+#textInfoCard h5 {
+    white-space: wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 @media screen and (min-width: 2560px) {
-    #header {
-        height: 100%;
+    #appbar-desktop {
+        display: block;
     }
-    #drawer {
-        width: 30vh;
-    }
-    #menuItems li {
-        font-size:3vh;
-        line-height:5vh;
-    }
-    #container {
-        margin-left:20vh;
-    }
-    #circle {
-        margin-top:5vh;
-    }
-    #circle img {
-        width: 100vh;
-    }
-    #underIntro {
-        margin-top:-20%;
-    }
-    #buttonCircle {
-        position:absolute;
-        /* margin-top:-25vh; */
-        bottom:0;
-    }
-    #bubbles {
-        /* top:90vh; */
-        top:90%;
-    }
-    #portfolio-info {
-        margin-left:20vh;
-        margin-right:0;
-    }
-    #portfolio-info #onlyProjects {
-        margin-top:28%;
-    }
-    #portfolio-info h1 {
-        margin-top:18%;
-    }
-    #Proj3dCards {
-        margin:150px 0;
-        width:48%;
-    }
-    #projectCardTransform img {
-        height: 58vh;
-    }
-    #buttonProjShow button {
-        font-size:2.5vh;
-    }
-    #about {
-        font-size:2vh;
-    }
-    #contact {
-        font-size:1.8vh;
-    }
-    #infoCard {
-        width: 86%;
-        position:absolute;
-        left:5vh;
-        top:40vh;
-    }
-    #titleProject {
-        font-size:3vw;
+
+    #appbar-mobile {
+        display: none;
     }
 }
 
-@media screen and (min-width: 1920px) and (max-width: 2559px) {
-    #header {
-        height: 100%;
+@media screen and (min-width: 1440px) and (max-width: 2559px) {
+    #appbar-desktop {
+        display: block;
     }
-    #drawer {
-        width: 30vh;
-    }
-    #menuItems li {
-        font-size:3vh;
-        line-height:5vh;
-    }
-    #container {
-        margin-left:20vh;
-    }
-    #circle {
-        margin-top:5vh;
-    }
-    #circle img {
-        width: 90vh;
-    }
-    #underIntro {
-        margin-top:-10%;
-    }
-    #buttonCircle {
-        position:absolute;
-        bottom:0;
-    }
-    #bubbles {
-        top:90%;
-    }
-    #portfolio-info {
-        margin-left:20vh;
-        margin-right:0;
-    }
-    #portfolio-info #onlyProjects {
-        margin-top:28%;
-    }
-    #portfolio-info h1 {
-        margin-top:12%;
-    }
-    #Proj3dCards {
-        margin:100px 0.6%;
-        width:46%;
-    }
-    #projectCardTransform img {
-        height: 58vh;
-    }
-    #buttonProjShow button {
-        font-size:2.5vh;
-    }
-    #about {
-        font-size:2vh;
-    }
-    #contact {
-        font-size:1.8vh;
-    }
-    #infoCard {
-        width: 85%;
-        position:absolute;
-        left:5vh;
-        top:40vh;
-    }
-    #titleProject {
-        font-size:4vw;
-    }
-}
 
-@media screen and (min-width: 1680px) and (max-width: 1919px) {
-    #header {
-        height: 100%;
+    #appbar-mobile {
+        display: none;
     }
-    #drawer {
-        width: 30vh;
-    }
-    #menuItems li {
-        font-size:3vh;
-        line-height:5vh;
-    }
-    #container {
-        margin-left:20vh;
-    }
-    #circle {
-        margin-top:5vh;
-    }
-    #circle img {
-        width: 90vh;
-    }
-    #intro {
-        font-size:4rem;
-    }
-    #underIntro {
-        margin-top:-10%;
-        font-size: 1.8rem;
-    }
-    #buttonCircle {
-        position:absolute;
-        /* margin-top:-35vh; */
-        bottom:0;
-    }
-    #bubbles {
-        top:90%;
-    }
-    #portfolio-info {
-        margin-left:20vh;
-        margin-right:0;
-    }
-    #portfolio-info #onlyProjects {
-        margin-top:28%;
-    }
-    #portfolio-info h1 {
-        margin-top:14%;
-    }
-    #Proj3dCards {
-        margin:100px 0.5%;
-        width:44%;
-    }
-    #projectCardTransform img {
-        height: 58vh;
-    }
-    #buttonProjShow button {
-        font-size:2.5vh;
-    }
-    #about {
-        font-size:2vh;
-    }
-    #contact {
-        font-size:1.8vh;
-    }
-    #infoCard {
-        width: 85%;
-        position:absolute;
-        left:5vh;
-        top:40vh;
-    }
-    #titleProject {
-        font-size:4vw;
-    }
-}
 
-@media screen and (min-width: 1440px) and (max-width: 1679px) {
-    #header {
-        height:100%;
-    }
-    #drawer {
-        width: 30vh;
-    }
-    #menuItems li {
-        font-size:3vh;
-        line-height:5vh;
-    }
-    #container {
-        margin-left:20vh;
-    }
-    #circle {
-        margin-top:5vh;
-    }
-    #circle img {
-        width: 85vh;
-    }
-    #intro {
-        font-size:3.8rem;
-    }
-    #underIntro {
-        margin-top:-10%;
-        font-size:1.6rem;
-    }
-    #buttonCircle {
-        position:absolute;
-        /* margin-top:-22vh; */
-        bottom:0;
-    }
-    #bubbles {
-        top:90%;
-    }
-    #portfolio-info {
-        margin-left:20vh;
-        margin-right:0;
-    }
-    #portfolio-info #onlyProjects {
-        margin-top:28%;
-    }
-    #portfolio-info h1 {
-        margin-top:10%;
-    }
-    #Proj3dCards {
-        margin: 100px 2%;
-        width:40%;
-    }
     #projectCardTransform img {
         height: 58vh;
-    }
-    #buttonProjShow button {
-        font-size:2.5vh;
-    }
-    #about {
-        font-size:2vh;
-    }
-    #contact {
-        font-size:1.8vh;
-    }
-    #infoCard {
-        width: 85%;
-        position:absolute;
-        left:5vh;
-        top:40vh;
-    }
-    #titleProject {
-        font-size:4vw;
     }
 }
 
 /* FOR TABLET SIZES */
-@media screen and (min-width: 1024px) and (max-width: 1439px) {
-    * {
-        font-size:1.8vw;
+@media screen and (min-width: 700px) and (max-width: 1439px) {
+    #appbar-desktop {
+        display: none;
     }
-    #header {
-        height:100%;
+
+    #appbar-mobile {
+        display: block;
     }
+
     #appbar {
-        width:100%;
+        width: 100%;
         background: linear-gradient(45deg, #17003d 50%, #25015f 90%);
-        box-shadow:0 4px 10px rgba(46, 46, 46, 0.5);
+        box-shadow: 0 4px 10px rgba(46, 46, 46, 0.5);
     }
-    #portfolioHover h1, #portfolioHover #menuIconHover {
-        font-size:3.5vh;
-    }
-    #drawer {
-        width: 50vh;
-    }
-    #menuItems li {
-        font-size:3vw;
-        line-height:10vh;
-    }
-    #container {
-        margin-left:0;
-    }
-    /* #circle {
-        margin-top:10vh;
-    } */
-    #circle img {
-        width: 45%;
-        position:absolute;
-        bottom:0;
-        right:0;
-    }
-    #intro {
-        margin-top:14vh;
-        margin-left: 10%;
-        font-size:4.5vw;
-    }
-    #underIntro {
-        margin-top:0;
-        margin-left:10%;
-        font-size:1.6vw;
-    }
-    #buttonCircle {
-        position:absolute;
-        bottom:0;
-        left:8%;
-    }
-    #bubbles {
-        top:90%;
-    }
-    #portfolio-info {
-        margin-left:0;
-        margin-right:0;
-    }
-    #portfolio-info #onlyProjects {
-        margin-top:40%;
-    }
-    #portfolio-info h1 {
-        margin-top:10%;
-        margin-left: 5vh;
-    }
-    #about {
-        font-size:3rem;
-    }
+
     #Proj3dCards {
-        margin:120px 0;
-        width:100%;   
-        perspective:none;
+        /* margin: 100px 0;
+                width: 100%; */
+        perspective: none;
         transform-style: none;
-        transition-property:none;
-        transition-duration:none;
+        transition-property: none;
+        transition-duration: none;
     }
 
     #projectCardTransform img {
@@ -377,133 +103,79 @@
     }
 
     #Proj3dCards:hover #projectCardTransform {
-        transform: none;
+        transform: none !important;
     }
 
     #projectCardTransform {
-        transform:none;
-        transition-property: none;
-        transition-duration:none;
+        transform: none !important;
+        transition-property: none !important;
+        transition-duration: none !important;
     }
 
     #infoCard {
-        transform: none;
-        transition-property:none;
-        transition-duration:none;
+        transform: none !important;
+        transition-property: none !important;
+        transition-duration: none !important;
     }
 
     #Proj3dCards:hover #infoCard {
-        transform:none;
-        box-shadow: none;
+        transform: none !important;
+        box-shadow: none !important;
     }
+
     #infoCard {
         width: 100%;
-        /* position:absolute;
-        left:0;
-        top:60vh; */
     }
-    #buttonProjShow {
-        padding: 4vh 4vh 2.6vh 4vh;
+
+    #skill-logo-img {
+        width: 8vw !important;
+        height: 8vw !important;
     }
-    #buttonProjShow button {
-        font-size:4vw;
+
+    /* #about #spline-avatar {
+        height: 200px !important;
+    } */
+    #details-proj-container {
+        width: 100%;
     }
-    #about, #contact {
-        font-size:1.8vw;
-    }
-    #titleProject {
-        margin-top:10vh;
-        font-size:10vw;
-    }
+
     .swiper {
-        border-radius: 10vh;
-        height:80vh;
+        width: 100%;
+        height: 40vh;
     }
-    #container {
-        width:100%;
-    }
+
     #buttonBox {
-        width:250px;
-        height:250px;
+        width: 150px;
+        height: 150px;
     }
+
     #buttPlayApp:hover {
-        background-size: 400px;
+        background-size: 250px;
     }
 }
 
-@media screen and (min-width: 700px) and (max-width: 1024px) {
-    * {
-        font-size:3vw;
+@media screen and (max-width: 700px) {
+    #appbar-desktop {
+        display: none;
     }
-    #header {
-        height:100%;
+
+    #appbar-mobile {
+        display: block;
     }
+
     #appbar {
-        width:100%;
+        width: 100%;
         background: linear-gradient(45deg, #17003d 50%, #25015f 90%);
-        box-shadow:0 4px 10px rgba(46, 46, 46, 0.5);
+        box-shadow: 0 4px 10px rgba(46, 46, 46, 0.5);
     }
-    #portfolioHover h1, #portfolioHover #menuIconHover {
-        font-size:3.8vh;
-    }
-    #drawer {
-        width: 60vh;
-    }
-    #menuItems li {
-        font-size:6vw;
-        line-height:12vh;
-    }
-    #container {
-        margin-left:0;
-    }
-    /* #circle {
-        margin-top:10vh;
-    } */
-    #circle img {
-        width: 50%;
-        position:absolute;
-        bottom:0;
-        right:0;
-    }
-    #intro {
-        margin-top:16vh;
-        margin-left: 5vh;
-        font-size:10vw;
-    }
-    #underIntro {
-        margin-top:0;
-        margin-left:5vh;
-        font-size:3vw;
-    }
-    #buttonCircle {
-        position:absolute;
-        bottom:0;
-        left:20px;
-    }
-    #bubbles {
-        top:90%;
-    }
-    #portfolio-info {
-        margin-left:0;
-        margin-right:0;
-    }
-    #portfolio-info #onlyProjects {
-        margin-top:60%;
-    }
-    #portfolio-info h1 {
-        margin-top:10%;
-        margin-left: 5vh;
-    }
-    #about {
-        font-size:3rem;
-    }
+
     #Proj3dCards {
-        margin:80px 0;
-        width:100%;   
-        perspective:none;
+        /* margin: 80px 0;
+                width: 100%; */
+        perspective: none;
         transform-style: none;
-        transition-property:none;
-        transition-duration:none;
+        transition-property: none;
+        transition-duration: none;
     }
 
     #projectCardTransform img {
@@ -511,199 +183,52 @@
     }
 
     #Proj3dCards:hover #projectCardTransform {
-        transform: none;
+        transform: none !important;
     }
 
     #projectCardTransform {
-        transform:none;
-        transition-property: none;
-        transition-duration:none;
+        transform: none !important;
+        transition-property: none !important;
+        transition-duration: none !important;
     }
 
     #infoCard {
-        transform: none;
-        transition-property:none;
-        transition-duration:none;
+        transform: none !important;
+        transition-property: none !important;
+        transition-duration: none !important;
     }
 
     #Proj3dCards:hover #infoCard {
-        transform:none;
-        box-shadow: none;
+        transform: none !important;
+        box-shadow: none !important;
     }
+
     #infoCard {
         width: 100%;
-        position:absolute;
-        left:0;
-        top:80vh;
     }
-    #buttonProjShow {
-        padding: 2vh 4vh 1.2vh 4vh;
-    }
-    #buttonProjShow button {
-        font-size:4vw;
-    }
-    #technologies li {
-        font-size:3vw;
-    }
-    #about, #contact {
-        font-size:3vw;
-    }
-    #titleProject {
-        margin-top:10vh;
-        font-size:10vw;
-    }
-    .swiper {
-        border-radius: 10vh;
-        height:60vh;
-    }
-    #container {
-        width:100%;
-    }
-    #buttonBox {
-        width:200px;
-        height:200px;
-    }
-    #buttPlayApp:hover {
-        background-size: 300px;
-    }
-}
 
-@media screen and (min-width: 200px) and (max-width: 700px) {
-    * {
-        font-size:5vw;
+    #skill-logo-img {
+        width: 10vw !important;
+        height: 10vw !important;
     }
-    #header {
-        height:100%;
-    }
-    #appbar {
-        width:100%;
-        background: linear-gradient(45deg, #17003d 50%, #25015f 90%);
-        box-shadow:0 4px 10px rgba(46, 46, 46, 0.5);
-    }
-    #portfolioHover h1, #portfolioHover #menuIconHover {
-        font-size:3.8vh;
-    }
-    #drawer {
-        width: 40vh;
-    }
-    #menuItems li {
-        font-size:7vw;
-        line-height:12vh;
-    }
-    #container {
-        margin-left:0;
-    }
-    /* #circle {
-        margin-top:10vh;
+
+    /* #about #spline-avatar {
+        height: 200px !important;
     } */
-    #circle img {
+     #details-proj-container {
         width: 100%;
-        opacity: .5;
-        z-index: -1;
-        position:absolute;
-        bottom:0;
-        right:0;
-    }
-    #intro {
-        margin-top:16vh;
-        margin-left: 5vh;
-        font-size:12vw;
-        z-index: 2;
-    }
-    #underIntro {
-        margin-top:-5vh;
-        margin-left:5vh;
-        font-size:3.4vw;
-        z-index: 2;
-    }
-    #buttonCircle {
-        position:absolute;
-        bottom:0;
-        right:20px;
-    }
-    #bubbles {
-        top:90%;
-    }
-    #portfolio-info {
-        margin-left:0;
-        margin-right:0;
-    }
-    #portfolio-info #onlyProjects {
-        margin-top:100%;
-    }
-    #portfolio-info h1 {
-        margin-top:20%;
-        margin-left: 5vh;
-    }
-    #about {
-        font-size:3rem;
-    }
-    #Proj3dCards {
-        margin:80px 0;
-        width:100%;   
-        perspective:none;
-        transform-style: none;
-        transition-property:none;
-        transition-duration:none;
-    }
+     }
 
-    #projectCardTransform img {
-        height: 100vh;
-    }
-
-    #Proj3dCards:hover #projectCardTransform {
-        transform: none;
-    }
-
-    #projectCardTransform {
-        transform:none;
-        transition-property: none;
-        transition-duration:none;
-    }
-
-    #infoCard {
-        transform: none;
-        transition-property:none;
-        transition-duration:none;
-    }
-
-    #Proj3dCards:hover #infoCard {
-        transform:none;
-        box-shadow: none;
-    }
-    #infoCard {
-        width: 100%;
-        position:absolute;
-        left:0;
-        top:80vh;
-    }
-    #buttonProjShow {
-        padding: 2vh 4vh .5vh 4vh;
-    }
-    #buttonProjShow button {
-        font-size:7vw;
-    }
-    #technologies li {
-        font-size:5vw;
-    }
-    #about, #contact {
-        font-size:4.5vw;
-    }
-    #titleProject {
-        margin-top:10vh;
-        font-size:10vw;
-    }
     .swiper {
-        border-radius: 10vh;
-        height:60vh;
+        width: 100%;
+        height: 30vh;
     }
-    #container {
-        width:100%;
-    }
+
     #buttonBox {
-        width:150px;
-        height:150px;
+        width: 150px;
+        height: 150px;
     }
+
     #buttPlayApp:hover {
         background-size: 250px;
     }

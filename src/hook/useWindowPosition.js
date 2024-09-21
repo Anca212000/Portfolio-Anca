@@ -5,9 +5,19 @@ export default function useWindowPosition(id) {
 
     useLayoutEffect(() => {
         function updatePosition() {
-            const offsetSetHeight = window.document.getElementById(id).offsetHeight;
-            if(window.pageYOffset > offsetSetHeight * 0.7) {
+            const element = window.document.getElementById(id);
+            if (!element) {
+                console.error(`Element with id ${id} not found`);
+                return;
+            }
+            const offsetSetTop = element.offsetTop;
+            const offsetSetHeight = element.offsetHeight;
+            console.log(`Scroll position: ${window.scrollY}, Element top: ${offsetSetTop}, Element height: ${offsetSetHeight}`);
+            if (window.scrollY > offsetSetTop - window.innerHeight + offsetSetHeight * 0.3) {
+                console.log(`Element ${id} is in view`);
                 setAnimation(true);
+            } else {
+                console.log(`Element ${id} is not in view`);
             }
         }
         window.addEventListener('scroll', updatePosition);

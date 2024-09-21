@@ -1,4 +1,40 @@
 @font-face {
+    font-family: "CocogooseGradient";
+    src: local("CocogooseGradient"),
+        url("../fonts/Cocogoose Pro Block Gradient Trial.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "CocogooseInnerline";
+    src: local("CocogooseInnerline"),
+        url("../fonts/Cocogoose Pro Block Innerline Trial.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "CocogooseUltralight";
+    src: local("CocogooseUltralight"),
+        url("../fonts/Cocogoose Pro Ultralight Trial.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "CocogooseRegular";
+    src: local("CocogooseRegular"),
+        url("../fonts/Cocogoose Pro Regular Trial.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "AspergitRegular";
+    src: local("AspergitRegular"),
+        url("../fonts/aspergit.regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "AdequateExtraLight";
+    src: local("AdequateExtraLight"),
+        url("../fonts/Adequate-ExtraLight.ttf") format("truetype");
+}
+
+@font-face {
     font-family: "RighteousRegular";
     src: local("RighteousRegular"),
      url("../fonts/Righteous-Regular.ttf") format("truetype");
@@ -9,4 +45,9 @@
     src: local("Jura"),
      url("../fonts/Jura.ttf") format("truetype");
 }
-    
+
+@font-face {
+    font-family: "MontserratRegular";
+    src: local("MontserratRegular"),
+        url("../fonts/Montserrat-Regular.ttf") format("truetype");
+}

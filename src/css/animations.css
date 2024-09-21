@@ -3,36 +3,77 @@
 }
 
 #portfolioHover:hover {
-    background: -webkit-linear-gradient(45deg,#ffbb01,rgb(201, 0, 90));
+    background: -webkit-linear-gradient(45deg, #ffbb01, rgb(201, 0, 90));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    cursor:pointer;
+    cursor: pointer;
     text-shadow: 5px 4px 1px aqua, 5px 4px 10px seashell, -1px -2px 1px rgb(201, 0, 90, 0.5), 0 0 1px #ffbb01;
+}
+
+#desktop-menuItems {
+    cursor: pointer;
+}
+
+#desktop-menuItems li {
+    position: relative;
+}
+
+#desktop-menuItems li:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 0.3vh;
+    bottom: -5px;
+    left: 0;
+    border-radius: 15px;
+    background-image: linear-gradient(147deg, #ff8119 0%, #7200dd 74%);
+    transform-origin: bottom right;
+    transition: transform 0.4s ease-in-out;
+}
+
+#desktop-menuItems li:hover {
+    text-shadow: 0 0 10px #ff8a54;
+}
+
+#desktop-menuItems li:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 #menuIconHover {
     border-radius: 10px;
-    transition:ease-in-out .3s;
+    transition: ease-in-out .3s;
 }
 
 #menuIconHover:hover {
-    color:aqua; 
+    color: aqua;
     box-shadow: 5px 4px 1px aqua, 5px 4px 10px seashell, -1px -2px 1px rgb(201, 0, 90, 0.5), 0 0 1px #ffbb01;
-    cursor:pointer;
+    cursor: pointer;
+}
+
+#buttonSeePortf {
+    border-width: 1px 1px 0 1px;
+    border-style: solid;
+    border-color: #4cfce250;
+    border-radius: 100rem 100rem 0 0;
+    box-shadow: 10px 25px 40px 2px rgba(169, 191, 199, 0.466) inset;
 }
 
 #buttonSeePortf::before {
-    content:'';
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    background:#aa77f1;
-    background-image: linear-gradient(147deg, #c800e8 0%, #c90059 74%);
-    z-index:-1;
-    clip-path:circle(0% at 50% 100%);
-    transition:all .8s;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #5e00ac;
+    /* #aa77f1 */
+    background-image: linear-gradient(147deg, #ff8119 0%, #7200dd 74%);
+    /* linear-gradient(147deg, #c800e8 0%, #c90059 74%); */
+    z-index: -1;
+    clip-path: circle(0% at 50% 100%);
+    transition: all .8s;
 }
 
 #buttonSeePortf:hover::before {
@@ -41,13 +82,13 @@
 }
 
 #arrowsDown span {
-    display:block;
-    width:2vh;
-    height:2vh;
+    display: block;
+    width: 2vh;
+    height: 2vh;
     border-bottom: 1px solid #4cfce1;
     border-right: 1px solid #4cfce1;
-    transform:rotate(45deg);
-    animation:animate 2s infinite;
+    transform: rotate(45deg);
+    animation: animate 2s infinite;
     margin: -10px;
 }
 
@@ -62,48 +103,77 @@
 @keyframes animate {
     0% {
         opacity: 0.0;
-        transform:rotate(45deg) translate(-1.5vh, -1.5vh);
+        transform: rotate(45deg) translate(-1.5vh, -1.5vh);
     }
+
     50% {
         opacity: 1.0;
     }
+
     100% {
         opacity: 0.0;
-        transform:rotate(45deg) translate(1.5vh, 1.5vh);
+        transform: rotate(45deg) translate(1.5vh, 1.5vh);
     }
 }
 
-#menuItems li {
-    padding: 14px 0 0 0;
-    transition: linear .3s;
-}
-
-#menuItems div {
-    margin-top:-4px;
-    width:22vh;
-    border-bottom: 1px solid rgba(23, 0, 61, 0.473);
-    box-shadow: 1px 1px 15px rgba(23, 0, 61, 1);
-    transition: linear .5s;
-}
-
-#menuItems li:hover {
-    color:#e6fb0000;
-    text-shadow: 5px 2px 1px aqua, 5px 2px 10px seashell, -2px -2px 1px rgba(23, 0, 61, 0.7), 0 0 10px #ffbb01;
+#sidebarMenuItems li {
+    padding: 0.05rem 1rem;
+    margin: 0.2rem 0;
+    border-radius: 10rem;
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+    transition: all 0.5s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
     cursor: pointer;
-    transform: translate(2vh);
-
 }
 
-#menuItems li:hover + div {
-    border-bottom:1px solid rgba(217, 246, 255, 0.2);
-    box-shadow: 1px 1px 5px rgba(217, 246, 255, 0.7);
+#sidebarMenuItems li:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    border-radius: 10rem;
+    z-index: -2;
+}
+
+#sidebarMenuItems li:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    /* background-image: linear-gradient(90deg, #c900e8 0%, #c90059 20%, #ff4096 40%, #ff8e25 60%, rgb(160, 35, 35) 80%, #922e00 100%); */
+    background-color: rgb(82, 36, 167);
+    box-shadow: rgba(50, 50, 93, 0.76) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.993) 0px 18px 36px -18px inset;
+    border: 1px solid rgba(0, 0, 0, 0.658);
+    transition: all 0.5s;
+    border-radius: 10rem;
+    z-index: -1;
+}
+
+#sidebarMenuItems li:hover {
+    color: #6000fb34;
+    text-shadow: 3px 2px 1px rgb(255, 255, 255), 5px 2px 10px seashell, -2px -2px 1px rgba(23, 0, 61, 0.7), 0 0 10px #fff0c8;
+    transform: translate(1vh, 0);
+}
+
+#sidebarMenuItems li:hover:before {
+    width: 100%;
 }
 
 #Proj3dCards {
     perspective: 100vh;
     transform-style: preserve-3d;
     transition-property: perspective;
-    transition-duration:1s;
+    transition-duration: 1s;
 }
 
 #Proj3dCards:hover #projectCardTransform {
@@ -111,9 +181,9 @@
 }
 
 #projectCardTransform {
-    transform:rotateY(30deg);
+    transform: rotateY(30deg);
     transition-property: transform;
-    transition-duration:0.5s;
+    transition-duration: 0.5s;
 }
 
 #infoCard {
@@ -123,65 +193,65 @@
 }
 
 #Proj3dCards:hover #infoCard {
-    transform:rotateY(0deg);
+    transform: rotateY(0deg);
     box-shadow: 0 0 30px rgb(18, 12, 23);
 }
 
 #buttonProjShow {
-    width:20vh;
-    height:6vh;
-    padding:1vh 2vh;
-    margin:0 auto;
-    border-radius:30px;
-    border:2px solid #c90059;
+    width: 20vh;
+    height: 6vh;
+    padding: 1vh 2vh;
+    margin: 0 auto;
+    border-radius: 30px;
+    border: 2px solid #cfa8e9dc;
     text-align: center;
     transition: .2s;
     text-decoration: none;
-    background: linear-gradient(35deg,  #f3ed78, #ffebf4);
+    background: linear-gradient(35deg, #ee8732, #43009b);
 }
 
 @keyframes neon-button {
-    0% 
-    {
+    0% {
         left: 1px;
-        background-color:#0900220c;
-        box-shadow: 0 0 5px 2.5px #c9005a42;
+        background-color: #0900220c;
+        box-shadow: 0 0 5px 2.5px #821ef521;
     }
-    25%
-    {
+
+    25% {
         left: 10px;
-        background-color:#0900224b;
-        box-shadow: 0 0 10px 5px #c9005a54;
+        background-color: #0900224b;
+        box-shadow: 0 0 10px 5px #821ef56b;
     }
-    50%
-    {
+
+    50% {
         left: 20px;
-        background-color:#09002281;
-        box-shadow: 0 0 15px 7.5px #c9005a85;
+        background-color: #09002281;
+        box-shadow: 0 0 15px 7.5px #821ef59f;
     }
-    75%
-    {
+
+    75% {
         left: 30px;
-        background-color:#090022b0;
-        box-shadow: 0 0 20px 10px #c9005ac5;
+        background-color: #090022b0;
+        box-shadow: 0 0 20px 10px #821ef5de;
     }
-    100%
-    {
+
+    100% {
         left: 4px;
-        background-color:#090022;
-        box-shadow: 0 0 25px 12.5px #c90059;
+        background-color: #090022;
+        box-shadow: 0 0 25px 12.5px #821ef5;
+        /* #c90059 */
     }
 }
 
 #buttonProjShow:hover {
-    background:linear-gradient(45deg,#090022, #1a022e);
-    box-shadow: 0 0 30px 15px #c90059;
+    background: linear-gradient(45deg, #090022, #1a022e);
+    box-shadow: 0 0 30px 15px #821ef5;
     border: 2px solid transparent;
     animation-name: neon-button;
     animation-duration: .2s;
     animation-timing-function: ease;
 }
-  
+
 .swiper-slide {
     text-align: center;
     font-size: 18px;
@@ -198,30 +268,125 @@
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
-    box-shadow:5px 5px 20px -8px darkgrey;
-    border-radius:10px;
+    /* box-shadow: 5px 5px 20px -8px darkgrey;
+        border-radius: 10px; */
 }
-  
+
 .swiper-slide img {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-  
+
 .swiper {
-    width: 100%;
-    height: 50vh;
-    margin: 20px auto;
-    border-radius: 30vh;
+    width: 70%;
+    height: 60vh;
+    /* margin: 20px auto; */
+    /* border-radius: 10vh; */
     -webkit-box-reflect: below -80px linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.082));
 }
 
 #buttPlayApp:hover {
-    background-image: linear-gradient(45deg,#c900e8 0%, #c90059 20%, #ff4096 40%, #ff8e25 60%, rgb(160, 35, 35) 80%, #922e00 100%) ;
+    background-image: linear-gradient(90deg, #c900e8 0%, #c90059 20%, #ff4096 40%, #ff8e25 60%, rgb(160, 35, 35) 80%, #922e00 100%);
     background-size: 200px;
     background-position: center;
     border: 2px solid #922e00d2;
-    color:#17003d;
+    color: #17003d;
     box-shadow: 0 0 25px -2px #c9005a;
+}
+
+#form-contact {
+    width: 60vmin;
+    height: 50vmin;
+    display: grid;
+    place-content: center;
+    color: white;
+    text-shadow: 0 1px 0 #000;
+    --border-angle: 0turn;
+    --main-bg: conic-gradient(from var(--border-angle),
+            #213,
+            #112 5%,
+            #112 60%,
+            #213 95%);
+    border: solid 5px transparent;
+    border-radius: 2em;
+    --gradient-border: conic-gradient(from var(--border-angle),
+            transparent 25%,
+            rgb(76, 31, 112),
+            rgb(255, 126, 87) 99%,
+            transparent);
+    background: var(--main-bg) padding-box, var(--gradient-border) border-box, var(--main-bg) border-box;
+    background-position: center center;
+    -webkit-animation: bg-spin 6s linear infinite;
+    animation: bg-spin 6s linear infinite;
+}
+
+@-webkit-keyframes bg-spin {
+    to {
+        --border-angle: 1turn;
+    }
+}
+
+@keyframes bg-spin {
+    to {
+        --border-angle: 1turn;
+    }
+}
+
+#form-contact:hover {
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+@property --border-angle {
+    syntax: "<angle>";
+    inherits: true;
+    initial-value: 0turn;
+}
+
+#form-contact input[type="text"],
+#form-contact input[type="email"],
+#form-contact textarea {
+    min-width: 400px;
+    background-color: #3f2a8a;
+    border: none;
+    border: 4px solid rgb(77, 0, 201, .8);
+    border-radius: 10px;
+    padding: 10px 15px;
+    font-family: 'AspergitRegular';
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: #fff;
+    transition: .3s linear;
+}
+
+#form-contact input[type="text"]:hover,
+#form-contact input[type="email"]:hover,
+#form-contact textarea:hover {
+    outline: none;
+    border-color: rgba(250, 128, 114, 0.473);
+    color: #ffe3c9;
+}
+
+#form-contact input[type="text"]:focus,
+#form-contact input[type="email"]:focus,
+#form-contact textarea:focus {
+    outline: none;
+    border-color: salmon;
+    background-color: #ca6a1a;
+    color: #090022;
+}
+
+#form-contact input[type="text"]::placeholder,
+#form-contact input[type="email"]::placeholder,
+#form-contact textarea::placeholder {
+    color: #beacff;
+}
+
+#contact-icon:hover {
+    background-color: #fff;
+    color: #000 !important;
+    border-radius: 50%;
+    transition: .2s ease-in-out;
 }
