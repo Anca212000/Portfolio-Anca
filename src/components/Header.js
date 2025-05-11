@@ -108,6 +108,8 @@ const useStyles = makeStyles({
   headerImage: {
     opacity: "1",
     zIndex: "2",
+    objectFit: "contain",
+    margin: "0 auto",
   },
   bgStyleLottie: {
     zIndex: "-2",
@@ -147,7 +149,7 @@ export default function Header() {
   const [checked, setChecked] = useState(false);
 
   const namePortfolio = "/Portfolio-Anca/assets/nameNormalGlitch.gif";
-  const headerImage = "/Portfolio-Anca/assets/girlWorking.png";
+  const headerImage = "/Portfolio-Anca/assets/header-image.png";
 
   useEffect(() => {
     setChecked(true);
@@ -318,8 +320,8 @@ export default function Header() {
             >
               <Stack
                 direction="column"
-                alignItems="flex-end"
-                justifyContent="flex-end"
+                alignItems="flex-start"
+                justifyContent="center"
                 sx={{ height: "100%" }}
               >
                 {/* FOR CUBE */}
@@ -334,10 +336,9 @@ export default function Header() {
                 /> */}
                 <img
                   src={headerImage}
-                  width="100%"
-                  height="100%"
+                  width="80%"
+                  height="auto"
                   className={classes.headerImage}
-                  style={{ objectFit: "contain" }}
                 />
               </Stack>
             </Slide>

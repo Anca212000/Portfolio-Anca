@@ -106,11 +106,11 @@ export default function Contact({ checked }) {
           </p>
         </Stack>
         <Stack direction="row" spacing={2}>
-          <Link href="https://github.com/Anca212000" target="_blank" style={styleLinkIcon}>
+          <Link href="https://github.com/Anca212000" style={styleLinkIcon}>
             <GitHubIcon style={styleIcon} id="contact-icon" />
           </Link>
           <Link
-            href="https://www.linkedin.com/in/anca-prodan-358069227?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"
+            href="https://www.linkedin.com/in/anca-prodan-358069227?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
             style={styleLinkIcon}
           >
             <LinkedInIcon style={styleIcon} id="contact-icon" />

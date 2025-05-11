@@ -35,7 +35,7 @@ export default function ImageGallery({ nameImages }) {
           modifier: 1,
           slideShadows: true,
         }}
-        pagination={{ clickable: true, dynamicBullets: true }}
+        pagination={{ clickable: true }}
         loop={true}
         navigation={true}
         // slidesPerView={"auto"}

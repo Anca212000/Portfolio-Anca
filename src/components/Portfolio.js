@@ -41,8 +41,6 @@ export default function Portfolio() {
   const checkedA = useWindowPosition("about-autor");
   const checkedC = useWindowPosition("contact");
 
-  const circuitImg = "/Portfolio-Anca/assets/circuits.png";
-
   return (
     <Container maxWidth="false" id="portfolio-info">
       <Slide
@@ -165,7 +163,7 @@ export default function Portfolio() {
             direction="row"
             spacing={2}
             sx={{
-              py: 4,
+              pt: 4,
               px: 1,
               justifyContent: "flex-start",
               alignItems: "center",
@@ -187,7 +185,6 @@ export default function Portfolio() {
         </Slide>
         <About checked={checkedA} />
       </div>
-      <br />
       <div id="contact">
         <Slide
           direction="right"

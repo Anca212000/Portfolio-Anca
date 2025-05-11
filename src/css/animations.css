@@ -203,11 +203,12 @@
     padding: 1vh 2vh;
     margin: 0 auto;
     border-radius: 30px;
-    border: 2px solid #cfa8e9dc;
+    border: 1px solid #cfa8e9dc;
     text-align: center;
-    transition: .2s;
     text-decoration: none;
-    background: linear-gradient(35deg, #ee8732, #43009b);
+    background: linear-gradient(to right, #fc6076, #ee8732, #ef9d43, #43009b);
+    background-size: 300% 100%;
+    transition: all .3s ease-in-out;
 }
 
 @keyframes neon-button {
@@ -244,12 +245,12 @@
 }
 
 #buttonProjShow:hover {
-    background: linear-gradient(45deg, #090022, #1a022e);
-    box-shadow: 0 0 30px 15px #821ef5;
-    border: 2px solid transparent;
-    animation-name: neon-button;
-    animation-duration: .2s;
-    animation-timing-function: ease;
+    background-position: 100% 0;
+    box-shadow: 0 0 10px 2px rgba(104, 104, 104, 0.5);
+    /* background: linear-gradient(45deg, #090022, #1a022e); */
+    /* animation-name: neon-button; */
+    /* animation-duration: .2s; */
+    /* animation-timing-function: ease; */
 }
 
 .swiper-slide {
