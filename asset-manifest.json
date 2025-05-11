@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio-Anca/static/css/main.0d24bee5.css",
-    "main.js": "/Portfolio-Anca/static/js/main.aecd10a7.js",
+    "main.css": "/Portfolio-Anca/static/css/main.d6a7a8b1.css",
+    "main.js": "/Portfolio-Anca/static/js/main.c6fb54bb.js",
     "static/js/208.834eedce.chunk.js": "/Portfolio-Anca/static/js/208.834eedce.chunk.js",
     "static/js/293.def90fde.chunk.js": "/Portfolio-Anca/static/js/293.def90fde.chunk.js",
     "static/js/917.657c5ab9.chunk.js": "/Portfolio-Anca/static/js/917.657c5ab9.chunk.js",
@@ -20,8 +20,8 @@
     "static/media/Righteous-Regular.ttf": "/Portfolio-Anca/static/media/Righteous-Regular.fd0110471f2228c1808a.ttf",
     "static/media/aspergit.regular.otf": "/Portfolio-Anca/static/media/aspergit.regular.bdf447d79bcf22780e09.otf",
     "index.html": "/Portfolio-Anca/index.html",
-    "main.0d24bee5.css.map": "/Portfolio-Anca/static/css/main.0d24bee5.css.map",
-    "main.aecd10a7.js.map": "/Portfolio-Anca/static/js/main.aecd10a7.js.map",
+    "main.d6a7a8b1.css.map": "/Portfolio-Anca/static/css/main.d6a7a8b1.css.map",
+    "main.c6fb54bb.js.map": "/Portfolio-Anca/static/js/main.c6fb54bb.js.map",
     "208.834eedce.chunk.js.map": "/Portfolio-Anca/static/js/208.834eedce.chunk.js.map",
     "293.def90fde.chunk.js.map": "/Portfolio-Anca/static/js/293.def90fde.chunk.js.map",
     "917.657c5ab9.chunk.js.map": "/Portfolio-Anca/static/js/917.657c5ab9.chunk.js.map",
@@ -32,7 +32,7 @@
     "23.cd0f2dd1.chunk.js.map": "/Portfolio-Anca/static/js/23.cd0f2dd1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0d24bee5.css",
-    "static/js/main.aecd10a7.js"
+    "static/css/main.d6a7a8b1.css",
+    "static/js/main.c6fb54bb.js"
   ]
 }
