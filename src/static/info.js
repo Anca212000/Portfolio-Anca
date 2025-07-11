@@ -14,9 +14,6 @@ const info = [
       "temp-homepage/hist-sidebar.png",
     ],
     video: process.env.PUBLIC_URL + "/assets/video/PyrTemplVid.mp4",
-    /** TO DO:
-     * PUT THE LINK HEEREE
-     */
     linkHosted: "https://anca212000.github.io/history-template/index.html",
   },
   {
@@ -116,9 +113,6 @@ const info = [
       "todo-full-web-app/todo9.png",
     ],
     video: process.env.PUBLIC_URL + "/assets/video/SSyourPlansInstrSpeed.mp4",
-    /** TO DO:
-     * PUT THE LINK HEEREE
-     */
     linkHosted: "https://github.com/Anca212000/Save-and-Start-your-plans.git",
   },
   {
@@ -206,7 +200,7 @@ const info = [
     ],
     video:
       process.env.PUBLIC_URL + "/assets/video/PhotoEditorAppInstructions.mp4",
-    linkHosted: "https://replit.com/join/owdwhgszia-anca21",
+    linkHosted: "https://replit.com/@Anca21/Photo-Editor-App?outputonly=1&lite=true",
   },
   {
     id: 7,
@@ -231,8 +225,7 @@ const info = [
       "realtime-chat-app/chatapp7.png",
     ],
     video: process.env.PUBLIC_URL + "/assets/video/ChatAppReactjsSpeed.mp4",
-    linkHosted:
-      "https://613735c45228717701eae08d--flamboyant-leakey-27ed99.netlify.app/",
+    linkHosted: "https://reactjs-chat-message-app.netlify.app/",
   },
   {
     id: 8,
@@ -301,7 +294,7 @@ const info = [
       "manage-school-certificates/Screenshot 2024-09-08 124017.png",
     ],
     video: process.env.PUBLIC_URL + "/assets/video/ManageSchoolCert.mp4",
-    linkHosted: "",
+    linkHosted: "https://github.com/Anca212000/manage-school-certificates-app.git",
   },
   {
     id: 10,
