@@ -181,20 +181,22 @@ export default function PrrojectPage() {
           </div>
           <br />
 
-          <video
-            autoPlay
-            loop
-            muted
-            style={{
-              width: "100%",
-              height: "auto",
-              margin: "50px auto",
-              borderRadius: "50px",
-              boxShadow: "0 0 80px -20px rgba(201, 0, 89, .5)",
-            }}
-          >
-            <source src={info[id].video} type="video/mp4" />
-          </video>
+          {info[id].video && (
+            <video
+              autoPlay
+              loop
+              muted
+              style={{
+                width: "100%",
+                height: "auto",
+                margin: "50px auto",
+                borderRadius: "50px",
+                boxShadow: "0 0 80px -20px rgba(201, 0, 89, .5)",
+              }}
+            >
+              <source src={info[id].video} type="video/mp4" />
+            </video>
+          )}
 
           {info[id].linkHosted && (
             <>

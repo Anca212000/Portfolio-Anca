@@ -340,6 +340,24 @@ const info = [
     video: process.env.PUBLIC_URL + "/assets/video/HealthInspectionApp.mp4",
     linkHosted: "",
   },
+  {
+    id: 11,
+    title: "Figma Portfolio UI/UI Designs",
+    shortDescription:
+      "A modern and professionally crafted portfolio showcasing a collection of clean, user-focused website templates. Designed with strong UI/UX principles, minimalist layouts, and responsive web structure, this portfolio highlights creative web design concepts ...",
+    longDescription:
+      "<p>A modern and professionally crafted portfolio showcasing a collection of clean, user-focused website templates.</p>\
+      <p>Designed with strong UI/UX principles, minimalist layouts, and responsive web structure, this portfolio highlights creative web design concepts perfect for freelancers, designers, and digital entrepreneurs.</p>\
+      <p>Fully organized in Figma for easy viewing and presentation.</p>",
+    imageUrl:
+      process.env.PUBLIC_URL + "/assets/figma/figma-projects-collage.png",
+    images: [
+      "figma/figma-projects-collage.png",
+      "figma/figma-portfolio-menu.png"
+    ],
+    video: '',
+    linkHosted: "https://www.figma.com/proto/09qc8EB8tMVXHmmMPMVcxN/Portfolio-Designs-UI-UX",
+  },
 ];
 
 export default info;

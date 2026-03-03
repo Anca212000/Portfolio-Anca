@@ -5,7 +5,7 @@ import CircleTwoToneIcon from "@mui/icons-material/CircleTwoTone";
 import Spline from "@splinetool/react-spline";
 
 const styleAboutParagraph = {
-  height: "60vh",
+  // height: "60vh",
   textAlign: "justify",
   display: "flex",
   alignItems: "center",
