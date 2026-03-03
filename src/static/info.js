@@ -342,7 +342,7 @@ const info = [
   },
   {
     id: 11,
-    title: "Figma Portfolio UI/UI Designs",
+    title: "Figma Portfolio UI & UX Designs",
     shortDescription:
       "A modern and professionally crafted portfolio showcasing a collection of clean, user-focused website templates. Designed with strong UI/UX principles, minimalist layouts, and responsive web structure, this portfolio highlights creative web design concepts ...",
     longDescription:
