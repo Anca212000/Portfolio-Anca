@@ -70,7 +70,7 @@ const useStyles = makeStyles({
   },
   nameOfProject: {
     fontFamily: "CocogooseUltralight",
-    fontSize: "4vw",
+    fontSize: "2vw",
     letterSpacing: "3px",
     margin: "8vh auto",
     width: "80%",

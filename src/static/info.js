@@ -358,6 +358,29 @@ const info = [
     video: '',
     linkHosted: "https://www.figma.com/proto/09qc8EB8tMVXHmmMPMVcxN/Portfolio-Designs-UI-UX",
   },
+   {
+    id: 12,
+    title: "Movie Realtime Translation and Movies Recommendations AI",
+    shortDescription:
+      "Movie Translation App is a desktop application created in Python, using ML, that transcribes in realtime a video (movie) and also, makes a statistics based on an AI movie recommendation system ...",
+    longDescription:
+      "<p>Movie Translation App is a desktop application with a graphical user interface (built with ttkbootstrap, a modern skin for Tkinter) that offers users two completely different features, selectable from an initial menu.</p>\
+      <p>The first option is a movie recommendation system: the user enters a movie title and the number of recommendations desired, and the application searches for the closest match (using fuzzy text matching) in a dataset of movies and ratings (the CSV files in the /input/ directory), then calculates similar movies using a K-Nearest Neighbors algorithm based on user rating patterns (collaborative filtering)—essentially, 'if you liked movie X, you might also like these'.</p>\
+      <p>The second option, called 'Realtime subtitle', transcribes audio in real time using the microphone: it captures sound in small chunks (1-second chunks) via pyaudio, runs them through the faster-whisper model (an optimized version of OpenAI’s Whisper, running locally on the CPU), and displays the live transcription in a subtitle-style window that always stays on top of other windows—useful for generating live subtitles for a video playing on the screen, although at this stage it only transcribes (it doesn't yet translate) the speech.</p>\
+      <p>This option might be more suitable for an online movie that cannot be downlable or do not have online subtitles - in special cases like this one.</p>",
+    imageUrl:
+      process.env.PUBLIC_URL + "/assets/movie-translation/Screenshot 2026-07-08 133619.png",
+    images: [
+      "movie-translation/Screenshot 2026-07-08 133619.png",
+      "movie-translation/Screenshot 2026-07-08 133727.png",
+      "movie-translation/Screenshot 2026-07-08 133820.png",
+      "movie-translation/Screenshot 2026-07-08 134014.png",
+      "movie-translation/Screenshot 2026-07-08 134356.png",
+      "movie-translation/Screenshot 2026-07-08 134550.png"
+    ],
+    video: '',
+    linkHosted: "https://github.com/Anca212000/Movie-Translation-Py",
+  }
 ];
 
 export default info;
